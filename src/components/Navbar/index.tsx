@@ -1,22 +1,4 @@
 "use client"
-
-// import Image from "next/image";
-// import Link from "next/link";
-// import logo from "../../../../public/assets/f3-logo.jpg"
-
-// const Navbar = () => {
-//   return (
-//     <nav className="w-full p-3 sticky top-0 z-50 flex justify-between md:justify-around items-center">
-//       <Link href={"/"}>
-//         <Image src={logo} alt="F3 Distribuciones" />
-//       </Link>
-//     </nav>
-//   )
-// }
-
-// export default Navbar;
-
-
 import Link from "next/link";
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
@@ -31,10 +13,10 @@ const Navbar = () => {
   
   return (
     <Motion>
-      <nav className="flex justify-between items-center w-full h-20 px-4 fixed nav">
+      <nav className="flex flex-wrap items-center justify-between max-w-[65%] p-4 mx-auto md:py-8">
         <div>
           <Link href={"#home"}>
-            <Image src={logo} alt="F3 Distribuciones" />
+            <Image src={logo} alt="F3 Distribuciones" width={150} />
           </Link>
         </div>
 
