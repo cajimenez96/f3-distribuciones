@@ -1,3 +1,4 @@
+"use client"
 import { useEffect, useRef } from "react";
 import { useAnimation, useInView, motion } from "framer-motion";
 import { fadeIn } from "../../utils/transitions";
