@@ -3,10 +3,11 @@
 @tailwind utilities;
 
 :root {
-  --color-naranja: #FF9701;
+  --color-naranja: #F26E25;
   --color-blanco: #FFFF;
   --color-gris: #F4F4F4;
-  --color-negro: #343434; 
+  --color-negro: #343434;
+  --color-azul: #003E70; 
 }
 
 html {
@@ -14,11 +15,6 @@ html {
 }
 
 body {
-  color: var(--color-negro);
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      var(--color-gris)
-    )
-    var(--color-gris);
+  color: var(--color-azul);
+  background: linear-gradient(180deg, #FFFFFF 0%, #FCF0E8 2.05%, #F8F9FB 21.82%, #FDF0E7 41.27%, #F8F9FB 63.74%, #FDF1E9 83.85%, #FFFFFF 100%);
 }
