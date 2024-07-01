@@ -34,12 +34,10 @@ export default function Home() {
                 Soluciones mayoristas y minoristas con la mejor calidad y precios.
               </Text>
             </div>
-            <div className="flex justify-start w-1/2 mt-10">
-              <Link href="#contact">
-                <Button>
-                  Quiero consultar
-                </Button>
-              </Link>
+            <div className="flex justify-start w-full md:w-1/2 mt-10 mb-10 md:mb-0">
+              <Button href="#contact">
+                Quiero consultar
+              </Button>
             </div>
           </Reveal>
 
@@ -67,7 +65,9 @@ export default function Home() {
         </Reveal>
 
         <div className="w-full">
-          <Carousel />
+          <Motion>
+            <Carousel />
+          </Motion>
         </div>
         
       </Container>
