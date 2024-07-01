@@ -26,7 +26,7 @@ export default function Home() {
         <div className="w-[68%] mx-auto mt-10 flex flex-wrap justify-between">
           <Reveal>
             <div>
-              <Heading level={1} className="text-3xl md:text-5xl font-semibold">
+              <Heading level={1} className="text-3xl md:text-5xl font-black">
                 F3 Distribuciones
               </Heading>
 
@@ -34,7 +34,7 @@ export default function Home() {
                 Soluciones mayoristas y minoristas con la mejor calidad y precios.
               </Text>
             </div>
-            <div className="flex justify-start w-full md:w-1/2 mt-10 mb-10 md:mb-0">
+            <div className="flex justify-start w-full md:w-1/2 my-12">
               <Button href="#contact">
                 Quiero consultar
               </Button>
@@ -54,7 +54,7 @@ export default function Home() {
         <Reveal>
           <div>
               <div className="text-center">
-                <Heading level={3} className="text-2xl md:text-4xl">Nuestras marcas</Heading>
+                <Heading level={3} className="text-2xl md:text-4xl font-semibold">Nuestras marcas</Heading>
                 <div className="mt-5 text-center">
                   <Text className="md:max-w-xl mx-auto">
                     Trabajamos con las marcas líderes del mercado para ofrecerte productos de la más alta calidad. Nuestra selección incluye una variedad de opciones para satisfacer todas tus necesidades alimenticias, tanto al por mayor como al por menor.

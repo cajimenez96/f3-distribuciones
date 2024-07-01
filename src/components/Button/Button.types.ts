@@ -15,6 +15,7 @@ export type buttonComponentProps = Pick<ButtonProps, "children">
 
 export const buttons = {
   'classic': styles.classic,
+  'outline': styles.outline
 } 
 
 export type Styles = keyof typeof buttons;

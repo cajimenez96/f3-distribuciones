@@ -38,7 +38,7 @@ export function Reveal({ children }: { children: React.ReactNode }) {
                     hidden: { left: 0 },
                     visible: { left: "100%" }
                 }}
-                className="bg-naranja"
+                className="bg-naranja opacity-45"
                 initial="hidden"
                 animate={slideControls}
                 transition={{ duration: 0.5, ease: "easeIn" }}
