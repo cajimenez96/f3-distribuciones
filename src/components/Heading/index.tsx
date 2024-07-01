@@ -1,14 +1,12 @@
 import { HeadingProps } from "./Heading.types";
 
-const Heading = ({children, className, level = 1, ...rest}: HeadingProps
- ) => {
-
-  const Tag = `h${level}` as keyof JSX.IntrinsicElements;
+const Heading: React.FC<HeadingProps> = ({children, className = "", level = 1}) => {
+  const Etiqueta = `h${level}` as keyof JSX.IntrinsicElements;
 
   return (
-    <Tag className={`text-negro ${className}`} {...rest}>
+    <Etiqueta className={`text-negro ${className}`}>
       {children}
-    </Tag>
+    </Etiqueta>
   )
 }
 

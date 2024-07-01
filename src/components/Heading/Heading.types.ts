@@ -1,9 +1,7 @@
-import { ReactNode } from "react";
+import { HTMLAttributes, ReactNode } from "react";
 
-interface CustomProps{
+export interface HeadingProps{
   children: ReactNode;
-  className?: string;
   level?: 1 | 2 | 3 | 4 | 5 | 6;
+  className?: string;
 }
-
-export type HeadingProps = React.HTMLAttributes<HTMLHeadingElement> & CustomProps
