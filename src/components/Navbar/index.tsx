@@ -13,7 +13,7 @@ const Navbar = () => {
   
   return (
     <Motion>
-      <nav className="w-full md:w-[68%] px-4 md:py-8 mx-auto sticky flex flex-wrap items-center justify-between">
+      <nav className="md:w-[68%] px-4 md:py-8 mx-auto flex flex-wrap items-center justify-between z-50 sticky">
         <div>
           <Link href={"#home"}>
             <Image src={logo} alt="F3 Distribuciones" width={100} />
@@ -33,17 +33,21 @@ const Navbar = () => {
 
         <div
           onClick={() => setNav(!nav)}
-          className="cursor-pointer pr-4 z-20 md:hidden"
+          className="cursor-pointer z-50 pr-4 md:hidden"
         >
-          {nav ? <FaTimes size={30} className="text-blanco" /> : <FaBars size={30} />}
+          {nav ? <FaTimes size={30} className="text-naranja z-50" /> : <FaBars size={30} />}
         </div>
 
-        {nav && (
-          <ul className="flex flex-col justify-center items-center absolute z-10 top-0 left-0 w-full h-screen bg-azul text-naranja">
+        <div
+          className={`h-screen w-3/4 pb-5 z-20 top-0 md:hidden fixed ease-in-out text-end bg-azul text-naranja shadow-xl
+            ${nav ? 'right-0' : 'right-[-100%]' } duration-500`}
+        >
+          
+          <ul className=" mt-32">
             {links.map(({ id, label, url: link }) => (
               <li
                 key={id}
-                className="px-4 cursor-pointer capitalize py-6 text-4xl"
+                className="px-4 cursor-pointer capitalize py-5 text-xl"
               >
                 <Link onClick={() => setNav(!nav)} href={link}>
                   {label}
@@ -51,7 +55,8 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-        )}
+
+        </div>
       </nav>
     </Motion>
   );

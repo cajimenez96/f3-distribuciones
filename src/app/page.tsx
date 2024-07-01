@@ -23,7 +23,7 @@ export default function Home() {
       <Navbar />
       
       {/* HERO */}
-      <Container className="w-full min-h-[60vh] mt-10 justify-center flex items-center">
+      <Container className="w-full min-h-[60vh] mt-10 justify-center flex items-center z-0">
         <div className="md:w-[68%] mx-5 md:mx-auto flex flex-wrap justify-between">
           <Reveal>
             <div>
