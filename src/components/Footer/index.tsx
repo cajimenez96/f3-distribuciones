@@ -4,25 +4,20 @@ import { footerData, footerSocialNetworks } from "./Footer.data";
 import Link from "next/link";
 import logo from "../../../public/assets/f3-logo.jpg"
 import { Motion } from "../Motion";
-import Text from "../Text";
 
 const Footer = () => {
   return (
     <div className="md:w-[68%] p-6 mx-auto mt-10">
-      <div className="justify-between md:flex">
-        <div>
-          <Motion>
+      <div className="flex flex-wrap md:flex-nowrap gap-5 justify-center items-center mx-auto">
+        <Motion>
+          <Link href="/">
             <Image src={logo} width={100} alt="F3 Distribuciones" />
-          </Motion>
-          <Reveal>
-            <Text className="mt-5 text-primaryDark max-w-[250px]">Distribuidora mayorista y minorista de productos alimenticios."</Text>
-          </Reveal>
-        </div>
+          </Link>
+        </Motion>
         {footerData.map(({ id, title, links }) => (
-          <div key={id}>
-            <h4 className="mt-8 text-lg md:mt-0"><Reveal>{title}</Reveal></h4>
+          <div key={id} className="w-full flex justify-evenly">
             {links.map(({ id, name, link }) => (
-              <Link key={id} href={link} className="block mt-4 text-primaryDark hover:text-white">
+              <Link key={id} href={link} className="font-medium text-azul text-lg hover:underline duration-150">
                 <Reveal>
                   {name}
                 </Reveal>
@@ -32,7 +27,7 @@ const Footer = () => {
         ))}
       </div>
 
-        <div className="border-[#3F3E45] border-[1px] my-7" />
+        <div className="border-azul border-[1px] my-7" />
 
         <div className="items-center justify-between md:flex">
         <div className="my-3">

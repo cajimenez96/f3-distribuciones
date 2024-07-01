@@ -28,7 +28,7 @@ const Button: React.FC<ButtonProps> = ({
 
   return (
     <button
-      className={`w-full rounded-xl py-1 ${className} ${handleStyle(buttonStyle, disabled)} duration-200`}
+      className={`w-full rounded-xl py-1 shadow-xl ${className} ${handleStyle(buttonStyle, disabled)} duration-200`}
       onClick={handleClick}
       type={type}
     >

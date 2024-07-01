@@ -15,6 +15,7 @@ import Input from "@/components/Input";
 import Contact from "@/components/Contact";
 import Link from "next/link";
 import Carousel from "@/components/Carousel";
+import Divider from "@/components/Divider";
 
 export default function Home() {
   return (
@@ -22,8 +23,8 @@ export default function Home() {
       <Navbar />
       
       {/* HERO */}
-      <Container className="w-full min-h-[70vh]">
-        <div className="w-[68%] mx-auto mt-10 flex flex-wrap justify-between">
+      <Container className="w-full min-h-[60vh] mt-10 justify-center flex items-center">
+        <div className="w-[68%] mx-auto flex flex-wrap justify-between">
           <Reveal>
             <div>
               <Heading level={1} className="text-3xl md:text-5xl font-black">
@@ -48,11 +49,14 @@ export default function Home() {
         </div>
       </Container>
 
+      <Divider />
+
 
       {/* MARCAS */}
-      <Container className="w-full flex flex-col items-center" id="marcas">
-        <Reveal>
-          <div>
+      <Container className="w-full flex flex-col items-center mb-20" id="marcas">
+        <div>
+          <Reveal>
+            <div className="w-[68%] md:w-full mx-auto">
               <div className="text-center">
                 <Heading level={3} className="text-2xl md:text-4xl font-semibold">Nuestras marcas</Heading>
                 <div className="mt-5 text-center">
@@ -61,8 +65,9 @@ export default function Home() {
                   </Text>
                 </div>
               </div>
-          </div>
-        </Reveal>
+            </div>
+          </Reveal>
+        </div>
 
         <div className="w-full">
           <Motion>
@@ -72,10 +77,12 @@ export default function Home() {
         
       </Container>
 
-      {/* CONTACT */}
-      <Container className="mx-auto mt-20" id="contact">
-        <Contact />
-      </Container>
+      <Divider />
+
+      <Contact />
+
+      <Divider className="mb-0" />
+
       <Footer/>
       
     </main>

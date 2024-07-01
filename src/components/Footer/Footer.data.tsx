@@ -7,21 +7,16 @@ export const footerData = [
     links: [
       {
         id: 1,
-        name: "Inicio",
-        link: "#home",
-      },
-      {
-        id: 2,
         name: "Marcas",
         link: "#marcas",
       },
       {
-        id: 3,
+        id: 2,
         name: "Nosotros",
         link: "#about",
       },
       {
-        id: 4,
+        id: 3,
         name: "Contactanos",
         link: "#contact",
       },
