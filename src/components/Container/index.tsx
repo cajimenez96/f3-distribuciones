@@ -3,9 +3,9 @@ import styles from "./container.module.css";
 
 const Container: React.FC<ContainerProps> = ({children, className, ...rest}) => {
   return (
-    <div className={`${className} ${styles.background}`} {...rest}>
+    <section className={`${className} ${styles.background}`} {...rest}>
       {children}
-    </div>
+    </section>
   )
 }
 
