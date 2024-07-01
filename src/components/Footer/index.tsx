@@ -7,7 +7,7 @@ import { Motion } from "../Motion";
 
 const Footer = () => {
   return (
-    <div className="md:w-[68%] p-6 mx-auto mt-10">
+    <div className="w-[95%] md:w-[68%] p-6 mx-auto mt-10">
       <div className="flex flex-wrap md:flex-nowrap gap-5 justify-center items-center mx-auto">
         <Motion>
           <Link href="/">

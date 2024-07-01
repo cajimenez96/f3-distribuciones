@@ -24,7 +24,7 @@ export default function Home() {
       
       {/* HERO */}
       <Container className="w-full min-h-[60vh] mt-10 justify-center flex items-center">
-        <div className="w-[68%] mx-auto flex flex-wrap justify-between">
+        <div className="md:w-[68%] mx-5 md:mx-auto flex flex-wrap justify-between">
           <Reveal>
             <div>
               <Heading level={1} className="text-3xl md:text-5xl font-black">
@@ -51,15 +51,33 @@ export default function Home() {
 
       <Divider />
 
+      <Container className="w-full">
+        <div className="w-[95%] md:w-[68%] mx-auto">
+          <div>
+            <Heading level={3} className="text-2xl md:text-4xl font-semibold">
+              ¿Quiénes somos?
+            </Heading>
+            <div>
+
+            </div>
+          </div>
+        </div>
+
+      </Container>
+
+
+      <Divider />
+
+
 
       {/* MARCAS */}
       <Container className="w-full flex flex-col items-center mb-20" id="marcas">
         <div>
           <Reveal>
-            <div className="w-[68%] md:w-full mx-auto">
-              <div className="text-center">
-                <Heading level={3} className="text-2xl md:text-4xl font-semibold">Nuestras marcas</Heading>
-                <div className="mt-5 text-center">
+            <div className="mx-5 md:mx-auto">
+              <div className="">
+                <Heading level={3} className="text-2xl md:text-4xl font-semibold md:text-center">Nuestras marcas</Heading>
+                <div className="mt-5">
                   <Text className="md:max-w-xl mx-auto">
                     Trabajamos con las marcas líderes del mercado para ofrecerte productos de la más alta calidad. Nuestra selección incluye una variedad de opciones para satisfacer todas tus necesidades alimenticias, tanto al por mayor como al por menor.
                   </Text>

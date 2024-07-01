@@ -13,19 +13,18 @@ const Contact = () => {
 
   return (
     <Container className="w-full" id="contact">
-      <div className="w-[68%] mx-auto">
+      <div className="md:w-[68%] mx-5 md:mx-auto">
         <Reveal>
           <Heading level={5} className="text-xl md:text-4xl text-center font-semibold">
             {`¿Querés recibir mayor información de \nnuestros productos y servicios?`}
           </Heading>
         </Reveal>
-        <div className="mt-20 w-full">
+        <div className="md:w-1/2 mx-auto mt-20">
           <Reveal>
             <Heading level={3} className="text-xl md:text-3xl font-medium">Contactanos</Heading>
           </Reveal>
-          
           <Motion>
-            <form className="w-full mt-5 border-2 border-naranja rounded-lg p-5 shadow-xl">
+            <form className="w-full mx-auto mt-5 border-2 border-naranja rounded-lg p-5 shadow-xl">
               <div className="w-full">
                 <Input type="text" label="Nombre completo" />
                 <Input type="email" label="Correo electronico" />
@@ -39,6 +38,7 @@ const Contact = () => {
               </div>
             </form>
           </Motion>
+
         </div>
       </div>
     </Container>
