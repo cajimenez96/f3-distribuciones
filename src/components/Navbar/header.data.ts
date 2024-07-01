@@ -14,10 +14,11 @@ export const links: Link[] = [
     label: "Nosotros",
     url: "#about",
   },
-  // {
-  //   id: 3,
-  //   link: "portfolio",
-  // },
+  {
+    id: 3,
+    label: "Marcas",
+    url: "#marcas",
+  },
   // {
   //   id: 4,
   //   link: "experience",
