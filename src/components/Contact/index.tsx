@@ -29,6 +29,7 @@ const Contact = () => {
                 <Input type="text" label="Nombre completo" />
                 <Input type="email" label="Correo electronico" />
                 <Input type="tel" label="Telefono" />
+                <Input type="text" label="Direccion" />
                 <Input type="text" label="Asunto" />
                 <Input type="textarea" label="Mensaje" />
               </div>
