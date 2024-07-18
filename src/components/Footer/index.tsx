@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Reveal } from "../Reveal/";
 import { footerData, footerSocialNetworks } from "./Footer.data";
 import Link from "next/link";
-import logo from "../../../public/assets/f3-logo.jpg"
+import logo from "../../../public/assets/f3-logo.png"
 import { Motion } from "../Motion";
 
 const Footer = () => {
@@ -10,8 +10,8 @@ const Footer = () => {
     <div className="w-[95%] md:w-[68%] p-6 mx-auto mt-10">
       <div className="flex flex-wrap md:flex-nowrap gap-5 justify-center items-center mx-auto">
         <Motion>
-          <Link href="/">
-            <Image src={logo} width={100} alt="F3 Distribuciones" />
+          <Link href="/" className="w-20">
+            <Image src={logo} alt="F3 Distribuciones" />
           </Link>
         </Motion>
         {footerData.map(({ id, title, links }) => (

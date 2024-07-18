@@ -9,11 +9,11 @@ const config: Config = {
   theme: {
     extend: {},
     colors: {
+      "rosa": "var(--color-rosa)",
+      "celeste": "var(--color-celeste)",
       "naranja": "var(--color-naranja)",
-      "blanco": "var(--color-blanco)",
-      "gris": "var(--color-gris)",
-      "negro": "var(--color-negro)",
-      "azul": "var(--color-azul)"
+      "mandarina": "var(--color-mandarina)",
+      "blanco": "var(--color-blanco)"
     }
   },
   plugins: [],

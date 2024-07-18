@@ -19,10 +19,6 @@ export const links: Link[] = [
     label: "Marcas",
     url: "#marcas",
   },
-  // {
-  //   id: 4,
-  //   link: "experience",
-  // },
   {
     id: 5,
     label: "Contactanos",
