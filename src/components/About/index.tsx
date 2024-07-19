@@ -18,7 +18,7 @@ const About = () => {
           </Text>
         </Reveal>
       </div>
-      <Motion className="mt-14 flex flex-wrap justify-center gap-20">
+      <Motion className="mt-14 flex flex-wrap md:flex-nowrap justify-center gap-20">
         {about.cards.map(card => (
           <Card
             key={card.id}

@@ -1,50 +1,49 @@
 "use client"
-import "swiper/css";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import { ICarousel } from "./Carousel.types";
+import 'swiper/css';
+import 'swiper/css/pagination';
 
 const Carousel = ({elements} : ICarousel) => {
   return (
-    <div className="relative w-full md:w-4/5 mx-auto mt-20" id="servicios">
-      <div className="relative w-full overflow-hidden">
-        <Swiper
-          breakpoints={{
-            320: {
-              slidesPerView: 3
-            },
-            375: {
-              slidesPerView: 3
-            },
-            425: {
-              slidesPerView: 3
-            },
-            768: {
-              slidesPerView: 4
-            },
-            1024: {
-              slidesPerView: 8
-            }
-          }}
-          autoplay={{
-            delay: 0,
-            disableOnInteraction: false,
-          }}
-          spaceBetween={30}
-          loop={true}
-          speed={2000}
-          modules={[Autoplay]}
-        >
-          <div className="absolute flex">
-            {elements.map((element, index) => (
-              <SwiperSlide key={index} className="flex items-center slider-horizontal">
-                <Image src={element} alt="Payment" width={200} height={200} className="grayscale" />
-              </SwiperSlide>
-            ))}
-          </div>
-        </Swiper>
-      </div>
+    <div className="w-full">
+      <Swiper
+        spaceBetween={30}
+        autoplay={{
+          delay: 0,
+          disableOnInteraction: false,
+        }}
+        loop
+        speed={2500}
+        modules={[Autoplay]}
+        breakpoints={{
+          320: {
+            slidesPerView: 3
+          },
+          375: {
+            slidesPerView: 3
+          },
+          425: {
+            slidesPerView: 3
+          },
+          768: {
+            slidesPerView: 4
+          },
+          1024: {
+            slidesPerView: 6
+          }
+        }}
+
+        className="flex justify-center items-center text-center"
+      >
+        {elements.map((brand, index) => (
+          <SwiperSlide key={index}>
+            <Image src={brand} alt="prueba" className="grayscale w-16 md:w-96 h-fit" />
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </div>
   )
 }

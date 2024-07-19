@@ -15,13 +15,16 @@ export const brand = {
 }
 
 export const brands = [
-    marolio,
-    ilolay,
-    virginia,
-    riojanita,
-    verdeflor,
-    lario,
-    molto,
-    lazo,
-    orcovi
+    orcovi,
+    orcovi,
+    orcovi,
+    orcovi,
+    orcovi,
+    orcovi,
+    orcovi,
+    orcovi,
+    orcovi,
+    orcovi,
+    orcovi,
+    orcovi,
 ];
