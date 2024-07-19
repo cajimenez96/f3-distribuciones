@@ -3,7 +3,7 @@ import { TextProps } from "./Text.types";
 
 const Text = ({children, className, ...rest}: TextProps) => {
   return (
-    <p className={`text-base font-normal text-negro ${className}`} {...rest}>
+    <p className={`text-base font-normal ${className}`} {...rest}>
       {children}
     </p>
   )

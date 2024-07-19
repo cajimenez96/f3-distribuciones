@@ -17,34 +17,19 @@ import Link from "next/link";
 import Carousel from "@/components/Carousel";
 import Divider from "@/components/Divider";
 import Hero from "@/components/Hero";
+import About from "@/components/About";
 
 export default function Home() {
   return (
     <main id="home">
       <Navbar />
 
-      <div className="mt-32 md:mt-36">
+      <div className="mt-32 md:mt-44">
       
-        {/* HERO */}
         <Hero />
-
         <Divider />
 
-        <Container className="w-full">
-          <div className="w-[95%] md:w-[68%] mx-auto">
-            <div>
-              <Heading level={3} className="text-2xl md:text-4xl font-semibold">
-                ¿Quiénes somos?
-              </Heading>
-              <div>
-
-              </div>
-            </div>
-          </div>
-
-        </Container>
-
-
+        <About />
         <Divider />
 
 
