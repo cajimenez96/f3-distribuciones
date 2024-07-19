@@ -25,11 +25,11 @@ const Brand = () => {
     </div>
 
     <div className="mt-10 flex flex-col items-center">
-      <Motion>
-        <Carousel elements={brands} />
+      <div className='mx-auto flex flex-col justify-center items-center'>
+        {/* <Carousel elements={brands} /> */}
 
-        <Image src={cinta} alt="brands" className="object-fill w-fit h-[210px]" />
-      </Motion>
+        <Image src={cinta} alt="brands" className="object-fill h-fit" />
+      </div>
     </div>
 
   </div>
