@@ -28,7 +28,7 @@ const Hero = () => {
       </Reveal>
 
       <Motion>
-        <div className="w-[400px]">
+        <div className="w-[380px]">
           <Image src={imageHero} alt={hero.title} />
         </div>
       </Motion>

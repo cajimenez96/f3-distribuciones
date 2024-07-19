@@ -25,7 +25,7 @@ export default function Home() {
     <main id="home">
       <Navbar />
 
-      <div className="mt-32 md:mt-44">
+      <div className="mt-32 md:mt-44 px-5">
       
         <Hero />
         <Divider />
