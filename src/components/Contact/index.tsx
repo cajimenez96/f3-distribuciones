@@ -3,7 +3,7 @@ import Container from "../Container";
 import Heading from "../Heading";
 import Input from "../Input";
 import { Motion } from "../Motion";
-import { Reveal } from "../Reveal";
+import Reveal from "../Reveal";
 
 const Contact = () => {
   const handleSubmit = () => {

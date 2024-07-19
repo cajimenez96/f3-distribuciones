@@ -4,7 +4,7 @@ const Heading: React.FC<HeadingProps> = ({children, className = "", level = 1}) 
   const Etiqueta = `h${level}` as keyof JSX.IntrinsicElements;
 
   return (
-    <Etiqueta className={`text-negro ${className}`}>
+    <Etiqueta className={className}>
       {children}
     </Etiqueta>
   )

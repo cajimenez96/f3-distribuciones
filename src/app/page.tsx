@@ -8,7 +8,7 @@ import hero from "../../public/assets/hero.png";
 import Button from "@/components/Button";
 import { Motion } from "@/components/Motion";
 import Footer from "@/components/Footer";
-import { Reveal } from "@/components/Reveal";
+import Reveal from "@/components/Reveal";
 import { Swiper, SwiperSlide } from "swiper/react";
 import marolio from "../../public/assets/marcas/marolio.png";
 import Input from "@/components/Input";
@@ -16,6 +16,7 @@ import Contact from "@/components/Contact";
 import Link from "next/link";
 import Carousel from "@/components/Carousel";
 import Divider from "@/components/Divider";
+import Hero from "@/components/Hero";
 
 export default function Home() {
   return (
@@ -25,31 +26,7 @@ export default function Home() {
       <div className="mt-32 md:mt-36">
       
         {/* HERO */}
-        <Container className="w-full min-h-[60vh] justify-center flex items-center z-0">
-          <div className="md:w-[68%] mx-5 md:mx-auto flex flex-wrap justify-between">
-            <Reveal>
-              <div>
-                <Heading level={1} className="text-3xl md:text-5xl font-black">
-                  F3 Distribuciones
-                </Heading>
-
-                <Text className="max-w-md mt-10 degradedBlue">
-                  Soluciones mayoristas y minoristas con la mejor calidad y precios.
-                </Text>
-              </div>
-              <div className="flex justify-start w-full md:w-1/2 my-12">
-                <Button href="#contact">
-                  Quiero consultar
-                </Button>
-              </div>
-            </Reveal>
-
-            <Motion>
-              <Image src={hero} alt="a" />
-            </Motion>
-
-          </div>
-        </Container>
+        <Hero />
 
         <Divider />
 
