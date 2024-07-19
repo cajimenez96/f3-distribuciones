@@ -9,7 +9,7 @@ import { hero } from "./Hero.data";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col-reverse md:flex-row flex-wrap justify-evenly gap-10">
+    <div className="flex flex-col-reverse md:flex-row flex-wrap justify-evenly gap-10" id="home">
       <Reveal className="mx-5 text-center md:text-start">
         <div>
           <Heading level={1} className="text-4xl font-black">

@@ -17,7 +17,7 @@ export const links: Link[] = [
   {
     id: 3,
     label: "Marcas",
-    url: "#marcas",
+    url: "#brands",
   },
   {
     id: 5,

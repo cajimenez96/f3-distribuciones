@@ -3,9 +3,9 @@ import "swiper/css";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
-import { marcas } from "./carousel.data";
+import { ICarousel } from "./Carousel.types";
 
-const Carousel = () => {
+const Carousel = ({elements} : ICarousel) => {
   return (
     <div className="relative w-full md:w-4/5 mx-auto mt-20" id="servicios">
       <div className="relative w-full overflow-hidden">
@@ -31,14 +31,15 @@ const Carousel = () => {
             delay: 0,
             disableOnInteraction: false,
           }}
+          spaceBetween={30}
           loop={true}
           speed={2000}
           modules={[Autoplay]}
         >
           <div className="absolute flex">
-            {marcas.map(({ id, image }) => (
-              <SwiperSlide key={id} className="flex items-center slider-horizontal">
-                <Image src={`/assets/marcas/${image}`} alt="Payment" width={200} height={200} className="grayscale" />
+            {elements.map((element, index) => (
+              <SwiperSlide key={index} className="flex items-center slider-horizontal">
+                <Image src={element} alt="Payment" width={200} height={200} className="grayscale" />
               </SwiperSlide>
             ))}
           </div>

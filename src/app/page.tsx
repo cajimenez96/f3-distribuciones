@@ -18,6 +18,7 @@ import Carousel from "@/components/Carousel";
 import Divider from "@/components/Divider";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
+import Brand from "@/components/Brand";
 
 export default function Home() {
   return (
@@ -32,33 +33,7 @@ export default function Home() {
         <About />
         <Divider />
 
-
-
-        {/* MARCAS */}
-        <Container className="w-full flex flex-col items-center mb-20" id="marcas">
-          <div>
-            <Reveal>
-              <div className="mx-5 md:mx-auto">
-                <div className="">
-                  <Heading level={3} className="text-2xl md:text-4xl font-semibold md:text-center">Nuestras marcas</Heading>
-                  <div className="mt-5">
-                    <Text className="md:max-w-xl mx-auto">
-                      Trabajamos con las marcas líderes del mercado para ofrecerte productos de la más alta calidad. Nuestra selección incluye una variedad de opciones para satisfacer todas tus necesidades alimenticias, tanto al por mayor como al por menor.
-                    </Text>
-                  </div>
-                </div>
-              </div>
-            </Reveal>
-          </div>
-
-          <div className="w-full">
-            <Motion>
-              <Carousel />
-            </Motion>
-          </div>
-          
-        </Container>
-
+        <Brand />
         <Divider />
 
         <Contact />
