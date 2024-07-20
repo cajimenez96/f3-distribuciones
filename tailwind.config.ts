@@ -13,7 +13,8 @@ const config: Config = {
       "celeste": "var(--color-celeste)",
       "naranja": "var(--color-naranja)",
       "mandarina": "var(--color-mandarina)",
-      "blanco": "var(--color-blanco)"
+      "blanco": "var(--color-blanco)",
+      "transparent": "transparent"
     }
   },
   plugins: [],
