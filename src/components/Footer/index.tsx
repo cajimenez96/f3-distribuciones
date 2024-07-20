@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Reveal from "../Reveal/";
-import { footerData, footerNavbar, footerSocialNetworks } from "./Footer.data";
+import { footerData, footerSocialNetworks } from "./Footer.data";
 import Link from "next/link";
 import logo from "../../../public/assets/f3-logo.png"
 import { Motion } from "../Motion";
