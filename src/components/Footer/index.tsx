@@ -1,47 +1,40 @@
 import Image from "next/image";
 import Reveal from "../Reveal/";
-import { footerData, footerSocialNetworks } from "./Footer.data";
+import { footerData, footerNavbar, footerSocialNetworks } from "./Footer.data";
 import Link from "next/link";
 import logo from "../../../public/assets/f3-logo.png"
 import { Motion } from "../Motion";
+import Text from "../Text";
 
 const Footer = () => {
   return (
-    <div className="w-[95%] md:w-[68%] p-6 mx-auto mt-10">
-      <div className="flex flex-wrap md:flex-nowrap gap-5 justify-center items-center mx-auto">
-        <Motion>
-          <Link href="/" className="w-20">
-            <Image src={logo} alt="F3 Distribuciones" />
-          </Link>
-        </Motion>
-        {footerData.map(({ id, title, links }) => (
-          <div key={id} className="w-full flex justify-evenly">
-            {links.map(({ id, name, link }) => (
-              <Link key={id} href={link} className="font-medium text-azul text-lg hover:underline duration-150">
-                <Reveal>
-                  {name}
-                </Reveal>
-              </Link>
-            ))}
+    <div className="mt-10 w-full py-2 px-4 md:px-60 mx-auto z-50 bg-blanco">
+      <div className="pb-5">
+        <Motion className="flex justify-between items-center">
+          <div>
+            <Link href="/" className="w-20">
+              <Image src={logo} width={50} alt="F3 Distribuciones" />
+            </Link>
+            <Text className="text-sm whitespace-pre mt-2">
+              {footerData.F3}
+            </Text>
           </div>
-        ))}
-      </div>
 
-        <div className="border-azul border-[1px] my-7" />
-
-        <div className="items-center justify-between md:flex">
-        <div className="my-3">
-          <Reveal>
-            © 2024 F3 Distribuciones. Todos los derechos reservados.
-          </Reveal>
-        </div>
-        <div className="flex gap-5">
-          {footerSocialNetworks.map(({ id, icon, link }) => (
-            <Link key={id} href={link} className="text-2xl">
-              {icon}
+         {footerSocialNetworks.map(({ id, icon, name, link }) => (
+            <Link key={id} href={link} className="hover:text-celeste duration-200">
+              <div className="flex flex-col items-center">
+                {icon}
+                {name}
+              </div>
             </Link>
           ))}
-        </div>
+        </Motion>
+      </div>
+      <div className="pt-2 w-full text-end border-t-[3px] border-[#3434342c]">
+        <Text className="flex flex-wrap justify-center md:justify-end md:gap-2">
+          Sitio diseñado y desarrollado por 
+          <Link href={"/"} className="hover:text-celeste hover:underline duration-150"> CI - Marketing & Develop</Link>
+        </Text>
       </div>
 
     </div>

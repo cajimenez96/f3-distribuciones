@@ -7,7 +7,7 @@ export const links: Link[] = [
   {
     id: 1,
     label: "Inicio",
-    url: "#home",
+    url: "/",
   },
   {
     id: 2,

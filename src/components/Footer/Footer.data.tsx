@@ -1,100 +1,14 @@
-import { RiFacebookCircleFill, RiInstagramLine, RiLinkedinBoxFill, RiTwitterXFill } from "react-icons/ri";
+import { RiInstagramLine } from "react-icons/ri";
 
-export const footerData = [
-  {
-    id: 1,
-    title: "Links útiles",
-    links: [
-      {
-        id: 1,
-        name: "Marcas",
-        link: "#marcas",
-      },
-      {
-        id: 2,
-        name: "Nosotros",
-        link: "#about",
-      },
-      {
-        id: 3,
-        name: "Contactanos",
-        link: "#contact",
-      },
-      // {
-      //   id: 5,
-      //   name: "Términos y condiciones",
-      //   link: "#",
-      // },
-    ],
-  },
-  // {
-  //   id: 2,
-  //   title: "Comunidad",
-  //   links: [
-  //     {
-  //       id: 1,
-  //       name: "Centro de ayuda",
-  //       link: "#",
-  //     },
-  //     {
-  //       id: 2,
-  //       name: "Partners",
-  //       link: "#",
-  //     },
-  //     {
-  //       id: 3,
-  //       name: "Sugerencias",
-  //       link: "#",
-  //     },
-  //     {
-  //       id: 4,
-  //       name: "Blog",
-  //       link: "#",
-  //     },
-  //     {
-  //       id: 5,
-  //       name: "Newsletter",
-  //       link: "#",
-  //     },
-  //   ],
-  // },
-  // {
-  //   id: 3,
-  //   title: "Partner",
-  //   links: [
-  //     {
-  //       id: 1,
-  //       name: "Nuestro partner",
-  //       link: "#",
-  //     },
-  //     {
-  //       id: 2,
-  //       name: "Hazte partner",
-  //       link: "#",
-  //     },
-  //   ],
-  // },
-];
+export const footerData = {
+  F3: "© 2024 F3 Distribuidora.\nTodos los derechos reservados."
+}
 
 export const footerSocialNetworks = [
   {
-    id: 1,
-    icon: <RiInstagramLine />,
+    id: 0,
+    icon: <RiInstagramLine size={30} />,
+    name: "Instagram",
     link: "#"
-  },
-  {
-    id: 2,
-    icon: <RiFacebookCircleFill />,
-    link: "#"
-  },
-  // {
-  //   id: 3,
-  //   icon: <RiTwitterXFill />,
-  //   link: "#"
-  // },
-  // {
-  //   id: 4,
-  //   icon: <RiLinkedinBoxFill />,
-  //   link: "#"
-  // },
+  }
 ];
