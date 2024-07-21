@@ -11,7 +11,7 @@ const Navbar = () => {
 
   
   return (
-    <nav className="w-full py-2 px-4 md:px-60 mx-auto fixed top-0 flex flex-wrap items-center justify-between z-50 bg-blanco border-b-[3px] border-[#3434342c]">
+    <nav className="w-full py-2 px-4 lg:px-60 mx-auto fixed top-0 flex flex-wrap items-center justify-between z-50 bg-blanco border-b-[3px] border-[#3434342c]">
 
       <Link href={"#home"} className="py-2 w-12 md:w-20">
         <Image src={logo} alt="F3 Distribuciones"/>

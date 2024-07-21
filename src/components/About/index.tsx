@@ -18,15 +18,16 @@ const About = () => {
           </Text>
         </Reveal>
       </div>
-      <Motion className="mt-14 flex flex-wrap md:flex-nowrap justify-center gap-20">
+      <Motion className="mt-14 flex flex-wrap md:flex-nowrap justify-center gap-5 lg:gap-20">
         {about.cards.map(card => (
-          <Card
-            key={card.id}
-            id={card.id}
-            title={card.title}
-            description={card.description}
-            image={card.image}
-          />
+          <div className="md:w-[33%] max-w-[410px]" key={card.id}>
+            <Card
+              id={card.id}
+              title={card.title}
+              description={card.description}
+              image={card.image}
+            />
+          </div>
         ))}
       </Motion>
     </div>

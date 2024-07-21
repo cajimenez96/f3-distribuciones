@@ -22,14 +22,8 @@ const Carousel = ({elements} : ICarousel) => {
           320: {
             slidesPerView: 3
           },
-          375: {
-            slidesPerView: 3
-          },
-          425: {
-            slidesPerView: 3
-          },
           768: {
-            slidesPerView: 4
+            slidesPerView: 3
           },
           1024: {
             slidesPerView: 6
@@ -40,7 +34,7 @@ const Carousel = ({elements} : ICarousel) => {
       >
         {elements.map((brand, index) => (
           <SwiperSlide key={index}>
-            <Image src={brand} alt="prueba" className="grayscale w-16 md:w-96 h-fit" />
+            <Image src={brand} alt="prueba" className="grayscale w-36 lg:w-96 h-fit" />
           </SwiperSlide>
         ))}
       </Swiper>

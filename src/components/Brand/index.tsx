@@ -25,7 +25,7 @@ const Brand = () => {
     </div>
 
     <div className="mt-10 flex flex-col items-center">
-      <div className='mx-auto max-w-xs md:max-w-screen-xl flex flex-col justify-center items-center'>
+      <div className='mx-auto max-w-sm md:max-w-screen-md lg:max-w-screen-xl flex flex-col justify-center items-center'>
         <div className='w-[80%]'>
           <Carousel elements={brands} />
         </div>

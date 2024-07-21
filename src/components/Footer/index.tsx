@@ -8,7 +8,7 @@ import Text from "../Text";
 
 const Footer = () => {
   return (
-    <div className="mt-10 w-full py-2 px-4 md:px-60 mx-auto z-50 bg-blanco">
+    <div className="mt-10 w-full py-2 px-4 lg:px-60 mx-auto z-50 bg-blanco">
       <div className="pb-5">
         <Motion className="flex justify-between items-center">
           <div>
