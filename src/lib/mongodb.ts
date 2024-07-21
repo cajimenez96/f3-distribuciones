@@ -1,36 +1,17 @@
-// lib/mongodb.ts
+import { MONGO_URI } from "@/utils/contants"
+import mongoose from "mongoose";
 
-import mongoose from 'mongoose';
+const connectDB = async () => {
+  try {
+    if (!MONGO_URI) throw new Error('MONGO_URI No está definido');
 
-const MONGODB_URI = process.env.MONGODB_URI;
-
-if (!MONGODB_URI) {
-  throw new Error('Please define the MONGODB_URI environment variable inside .env.local');
-}
-
-let cached = global.mongoose;
-
-if (!cached) {
-  cached = global.mongoose = { conn: null, promise: null };
-}
-
-async function connectToDatabase() {
-  if (cached.conn) {
-    return cached.conn;
+    await mongoose.connect(MONGO_URI);
+    console.log('Conexion a BD establecida.');
+    
+  } catch (error) {
+    console.error('Error en la conexion a la BD: ', error);
+    process.exit(1);
   }
-
-  if (!cached.promise) {
-    const opts = {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    };
-
-    cached.promise = mongoose.connect(MONGODB_URI, opts).then((mongoose) => {
-      return mongoose;
-    });
-  }
-  cached.conn = await cached.promise;
-  return cached.conn;
 }
 
-export default connectToDatabase;
+export default connectDB;

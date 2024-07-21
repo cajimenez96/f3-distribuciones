@@ -34,7 +34,7 @@ const Input: React.FC<InputProps> = ({
           className="p-2 bg-transparent border-0 border-b-2 focus:outline-none"
         />
       )}
-      {hasError && (<p className="text-blanco text-xs font-light">{error}</p>)}
+      {hasError && (<p className="text-naranja text-xs font-light">{error}</p>)}
     </div>
   );
 };
