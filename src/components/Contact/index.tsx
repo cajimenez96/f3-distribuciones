@@ -18,6 +18,7 @@ const Contact = () => {
     <div className="w-full" id="contact">
       <div className="">
         <Reveal className="mx-auto">
+          <p className="text-center">{contact.description}</p>
           <Heading level={3} className="w-full font-medium text-center text-celeste text-4xl">
             {contact.title}
           </Heading>
