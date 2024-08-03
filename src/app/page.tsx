@@ -7,6 +7,7 @@ import Divider from "@/components/Divider";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Brand from "@/components/Brand";
+import Steps from "@/components/Steps";
 
 export default function Home() {
   return (
@@ -14,6 +15,8 @@ export default function Home() {
       <Navbar />
       <div className="mt-32 md:mt-44 px-5">
         <Hero />
+        <Divider />
+        <Steps />
         <Divider />
         <About />
         <Divider />
